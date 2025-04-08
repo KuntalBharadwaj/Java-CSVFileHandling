@@ -1,0 +1,11 @@
+Phone,Email
+9876543210,alice@example.com
+983456780,bob@example
++91-9876543210,charlie123@gmail.com
+9988776655,charlie@.com
+abcdefghij,notanemail.com
+8800554433,david@domain.com
+9999999999,eva@@domain.com
+98765,jack@domain
+7777888899,grace@domain.co.in
+9990001112,valid.email@domain.org
