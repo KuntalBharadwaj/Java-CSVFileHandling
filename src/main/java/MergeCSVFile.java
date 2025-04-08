@@ -23,13 +23,12 @@ public class MergeCSVFile {
             }
             reader1.close();
 
-            // Read students2.csv (ID, Marks, Grade) and merge
+            CSVWriter writer = new CSVWriter(new FileWriter(mergedFile));
+            writer.writeNext(new String[]{"ID", "Name", "Age", "Marks", "Grade"}); // Write header
+
             CSVReader reader2 = new CSVReader(new FileReader(file2));
             String[] line2;
             reader2.readNext(); // Skip header
-
-            CSVWriter writer = new CSVWriter(new FileWriter(mergedFile));
-            writer.writeNext(new String[]{"ID", "Name", "Age", "Marks", "Grade"}); // Write header
 
             while ((line2 = reader2.readNext()) != null) {
                 String id = line2[0];
